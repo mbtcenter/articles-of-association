@@ -21,6 +21,8 @@
 \usepackage[top=2.25cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
 % PDF document link package
 \usepackage{hyperref}
+% Allow for enumeration prefix
+\usepackage{enumitem}
 
 % Document Settings
 % -----------------
@@ -89,7 +91,7 @@
 % Index page
 % Content pages
 \section*{
-  \begin{enumerate}
+  \begin{enumerate}[label=Article \arabic*.,itemindent=*]
     \item Interpretation
     \linebreak[1]
     \textnormal{
@@ -103,7 +105,7 @@
       of the Association;
       \item {}``\emph{the Association}'' means the association intended to be bound by these articles;
       \item {}``\emph{clear days}'' in relation to the period of a notice means
-      a period excluding:
+      a period excluding:i
       \begin{enumerate}
         \item the day when the notice is given or deemed to be given; and
         \item the day for which it is given or on which it is to take effect;
